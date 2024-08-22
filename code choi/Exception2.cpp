@@ -8,6 +8,7 @@ void NhapMang(int &n, int &k, int a[]); // Hàm nhập số cho btoan
 void XuatMang(int n, int a[]);          // Hàm xuất mảng
 int XoaTaiK(int &n, int k, int a[]);    // Hàm xóa ptu tại vtri k
 int ThemTaiK(int &n, int k, int a[]);   // Hàm thêm ptu tại vtri k
+int XuLyNgoaiLe(int n, int k);          // Hàm xử lí ngoại lệ
 
 void MENU()
 {
@@ -20,8 +21,17 @@ void MENU()
 
 void NhapMang(int &n, int &k, int a[])
 {
-    printf("\nNhap vao so ptu array : ");
-    scanf("%d", &n);
+    n = 0;
+    while (n <= 0)
+    {
+        printf("\nNhap vao so ptu array [n > 0]: ");
+        scanf("%d", &n);
+        if (n <= 0)
+        {
+            printf("\nNhap lai so ptu mang !!!");
+        }
+    }
+
     for (int i = 0; i < n; i++)
     {
         printf("\nNhap vao ptu a[%d] : ", i + 1);
@@ -37,14 +47,45 @@ void XuatMang(int n, int a[])
     }
 }
 
+int XuLyNgoaiLe(int n, int k)
+{
+    try // Nếu vtri k ko tồn tại trong mảng
+    {
+        if (k < 0)
+        {
+            throw k;
+        }
+
+        if (k > n)
+        {
+            throw "ERROR";
+        }
+        return 1;
+    }
+    catch (int k)
+    {
+        printf("\nNgoai le xay ra !!!");
+    }
+
+    catch (const char *Loi)
+    {
+        printf("\nNgoai le xay ra !!!");
+    }
+    return 0;
+}
+
 int ThemTaiK(int &n, int k, int a[])
 {
     int nho;
     printf("\nNhap vtri can them : ");
     scanf("%d", &k);
+    k--; // Vì chương trình đc bắt đầu bằng số 1 khác với mảng là 0.
+    if (XuLyNgoaiLe(n, k) == 0)
+    {
+        return 0;
+    }
     printf("\nNhap vao ptu : ");
     scanf("%d", &nho);
-    k--;                        // Vì chương trình đc bắt đầu bằng số 1 khác với mảng là 0.
     for (int i = n; i > k; i--) // Xử lí các ptu trc K nhưng chưa thay đổi gtri K.
     {
         a[i] = a[i - 1];
@@ -59,6 +100,11 @@ int XoaTaiK(int &n, int k, int a[])
     printf("\nNhap vao vtri can xoa : ");
     scanf("%d", &k);
     k--;
+    if (XuLyNgoaiLe(n, k) == 0)
+    {
+        return 0;
+    }
+    
     for (int i = k; i < n - 1; i++)
     {
         a[i] = a[i + 1];
@@ -104,6 +150,7 @@ int main()
     int a[MAX_SIZE];
     NhapMang(n, k, a);
     XuatMang(n, a);
+    MENU();
     ChonSo(n, k, a);
     getch();
     return 1;
