@@ -1,0 +1,9 @@
+7
+
+0101101923#LapTrinhC#BatBuoc#DH#3
+0101003015#LogicHoc#TuChon#DH#2
+0101001742#HeDieuHanh#BatBuoc#DH#3
+0101007064#KyThuatLapTrinh#BatBuoc#DH#2
+0101004725#ThietKeWeb#TuChon#DH#3
+0101101955#LapTrinhPython#TuChon#DH#3
+0101100823#AnhVan2#BatBuoc#CD#3

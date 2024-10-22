@@ -1,0 +1,34 @@
+Tìm hiểu cấu trúc dữ liệu Binary Search Tree: Diễn giải các thao tác cơ bản của cấu trúc dữ liệu tương ứng trong
+Python. Cài đặt các ví dụ minh họa cho các thao tác đó trên Python. Ứng dụng cấu trúc dữ liệu Binary Search Tree để Viết chương trình bằng C/C++ thực hiện Bài toán Quản lý Môn học.
+Mục tiêu:
+- Tìm hiểu cấu trúc dữ liệu và vận dụng các thao tác cơ bản cho Binary Search Tree trong Python
+- Phát huy khả năng tự tìm kiếm, đọc tài liệu của sinh viên.
+- Sinh viên học cách tự khái quát, trừu tượng kiến thức mới dựa trên nền kiến thức cũ.
+- Biết cách viết một bài tìm hiểu, bài nghiên cứu ở mức đơn giản.
+- Cải thiện khả năng thuyết trình của sinh viên.
+- Học cách làm việc nhóm.
+Nội dung thực hiện:
+- Sinh viên tìm hiểu và trình bày giải thuật của các thao tác gồm: ý tưởng, ví dụ minh họa và cài đặt các giải thuật cho
+các thao tác trên cấu trúc dữ liệu.
+ Khởi tạo, nhập giá trị
+ Đọc phần tử
+ Thêm phần tử
+ Xóa phần tử
+ Tìm kiếm thông tin
+ Duyệt cây Binary Search Tree
+- Viết tài liệu nghiên cứu, chương trình minh họa cho đề tài.
+- Tạo tài liệu thuyết trình (power point)
+- Kỹ năng thuyết trình
+- Ứng dụng cấu trúc dữ liệu Binary Search Tree để Viết chương trình bằng C/C++ thực hiện bài toán.
+
+Tạo cây chứa thông tin Môn học và thực hiện các xử lý theo các yêu cầu sau:
+1. Mỗi Môn học chứa các thông tin: mã môn học, tên môn học, loại môn học, số tín chỉ, hệ đào tạo.
+2. Tạo cây cứha thông tin môn học bằng 2 cách: nhập từ bàn phím và đọc/ghi từ file txt.
+3. Duyệt cây theo 6 cách khác nhau.
+4. Duyệt cây theo chiều rộng và chiều sâu.
+5. Xóa 1 môn học x khỏi cây Binary Search Tree.
+6. Thêm 1 môn học x vào cây Binary Search Tree.
+7. Tìm môn học có tên x trong cây Binary Search Tree.
+8. Thống kê môn học theo số tín chỉ.
+9. Đếm số lượng môn học theo từng loại.
+10. Tính tổng số tín chỉ các môn học.  

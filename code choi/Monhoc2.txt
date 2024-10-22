@@ -1,0 +1,7 @@
+5
+
+0101101956#DeepLearning#BatBuoc#DH#2
+0101101975#IoT#BatBuoc#CD#3
+0101006237#AI#TuChon#DH#4
+0101000002#CongNgheJava#BatBuoc#DH#2
+0101101971#BigData#TuChon#DH#2
