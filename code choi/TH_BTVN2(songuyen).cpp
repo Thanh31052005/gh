@@ -290,7 +290,9 @@
     int a[MAX_SIZE], n = 0;
     NhapMang(a, n);
     XuatMang(a, n);
-    LietKeSoNguyenBeN(a);
+    SapxepChanTangLeGiam(a, n);
+    XuatMang(a, n);
+   /* LietKeSoNguyenBeN(a);
     printf("\nTong chu so dau le: %d", TongDauLe(a, n));
     printf("\nSo lan xuat hien: %d", LietKeSoLanXH(a, n));
     SapxepChanTangLeGiam(a, n);
@@ -299,7 +301,7 @@
     OddEven(a, n);
     XuatMang(a, n);
     KiemTraMangTrungHaiSo(a, n);
-    printf("\nSo nho thu 2 la: %d", SoNhoThu2(a, n));
+    printf("\nSo nho thu 2 la: %d", SoNhoThu2(a, n));*/
     getch();
     return 1;
  }
